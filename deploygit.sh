@@ -5,6 +5,6 @@ while true; do #initializing the yn question for pushing or not
     case $yn in #Expected answers in case yn
         [Yy]* ) git push origin master && exit;;
         [Nn]* ) echo "All done think to push it bro! " && exit;;
-        * ) echo "Answers Yes or No";; #if everything else that the expected Yn question
+        * ) echo "Expected Yes(Yy) or No(Nn)";; #if everything else that the expected Yn question
     esac #End case 
 done #End while
