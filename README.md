@@ -11,7 +11,7 @@ En tant que développeur je peux participer au projet Becoder: WTF
 Sprint 1: Deadline 2014.11.06
 
 * README à rédiger
-* Script "deploy"
+* Script "deploy"(Londusboub972 -> wait for mates validate it for git deploy)
 * Première passe : création + mise en page du formulaire + design.
 * accès restreint
 * http_basic_auth
