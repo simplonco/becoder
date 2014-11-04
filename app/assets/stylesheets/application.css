@@ -1,3 +1,28 @@
+body{
+  padding-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(255,255,255);
+  /* background-image: url('css/skull.png'); */
+ 
+
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+ 
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
