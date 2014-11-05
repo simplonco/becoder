@@ -12,8 +12,9 @@ Sprint 1: Deadline 2014.11.06
 
 * README à rédiger
 * Script "deploy"(Londusboub972 -> wait for mates validate it for git deploy)
-* Première passe : création + mise en page du formulaire + design.
-* accès restreint
+* Première passe : création 
+* Accès restreint
+* Mise en place du design
 * http_basic_auth
 * Candidature: création d'une candidature lors de la mise en production
 
