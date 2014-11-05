@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # BeCoder from bbgs
+=======
+# BeCoder from BBG's
+>>>>>>> f81c994526ab9358249ac1ccddf6e08481eb2f5d
 
 ## Objectif
 
