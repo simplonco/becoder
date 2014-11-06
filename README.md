@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-
-#BeCoder from BBG's
->>>>>>> f81c994526ab9358249ac1ccddf6e08481eb2f5d
+# BeCoder from BBG's
 
 ## Objectif
 
@@ -14,11 +11,14 @@ En tant que développeur je peux participer au projet Becoder: WTF
 Sprint 1: Deadline 2014.11.06
 
 * README à rédiger
+Manque url de serveur de test/dev (ajouter Yaf sur appsdeck ou heroku: yannick.francois@free.fr)
 * Script "deploy"(Londusboub972 -> wait for mates validate it for git deploy)
-* Première passe : création 
-* Accès restreint
-* Mise en place du design
-* http_basic_auth
-* Candidature: création d'une candidature lors de la mise en production
 
+* Première passe : création
+* Mise en place du design
+
+* Accès restreint
+* http_basic_auth
+
+* Candidature: création d'une candidature lors de la mise en production
 
