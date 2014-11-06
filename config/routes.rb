@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'candidates#new'
+  root 'candidates#form'
 end
