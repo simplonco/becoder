@@ -12,13 +12,13 @@ pour deployer `./deploy.sh`
 
 En tant que développeur je peux participer au projet Becoder: WTF
 
-Sprint 1: Deadline 2014.11.06
-
+Sprint 2
 * Première passe : création
 * Mise en place du design
 
 * Accès restreint
 * http_basic_auth
 
-* Candidature: création d'une candidature lors de la mise en production
+* Candidature: création d'une candidature lors de la mise en production (en anglais c'est application)
+Garder deux tables/objet: user et application
 
