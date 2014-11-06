@@ -1,6 +1,5 @@
-git pull
-git add -i
-echo "All file untracked will be ignored !!" #Just useless line
-git commit -a
+#!/bin/sh
+
+git pull origin master
 git push origin master
-git push appsdeck master
+git push git@appsdeck.eu:becoder-simplon.git master

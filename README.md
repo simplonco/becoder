@@ -6,13 +6,13 @@ Il s'agit du suivi d'un(e) simplonien(ne) sur une période de 18 mois: c'est-à-
 
 ## Developement
 
+Deploye sur http://becoder-simplon.appsdeck.eu
+
+pour deployer `./deploy.sh`
+
 En tant que développeur je peux participer au projet Becoder: WTF
 
 Sprint 1: Deadline 2014.11.06
-
-* README à rédiger
-Manque url de serveur de test/dev (ajouter Yaf sur appsdeck ou heroku: yannick.francois@free.fr)
-* Script "deploy"(Londusboub972 -> wait for mates validate it for git deploy)
 
 * Première passe : création
 * Mise en place du design
