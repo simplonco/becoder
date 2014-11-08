@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'candidates#form'
-
+  root 'home#index'
+  get '/New', to: 'candidates#form'
   resources :applications
 end
