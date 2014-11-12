@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CandidatesControllerTest < ActionController::TestCase
+class ApplicationsControllerTest < ActionController::TestCase
 
   test "new" do
     get :new

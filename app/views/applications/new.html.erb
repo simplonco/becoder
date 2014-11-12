@@ -1,0 +1,18 @@
+<h1>Proposez votre candidature</h1>
+
+
+<%= form_for Application.new do |f| %>
+  <fieldset>
+    <legend>Questionnaire</legend>
+       <h4>Votre expérience avec le code</h4>
+       <div>
+         <%= f.label :why_us, "Votre expérience avec le code" %>
+         <%= f.text_area :why_us %>
+         <%= f.label :computer_experiences, "Votre expérience avec l'informatique" %>
+         <%= f.text_area :computer_experiences %>
+       </div>
+            </fieldset>
+  <div class="actions">
+    <%= f.submit "Candidatez" %>
+  </div>
+<% end %>
