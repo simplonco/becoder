@@ -1,4 +1,43 @@
 <h1>Proposez votre candidature</h1>
 
-<%= form_for Candidature.new do |f| %>
+  <fieldset>
+    <legend>About you</legend>
+<%= form_for :candidate do |f| %>
+  <div class="field">
+    <%= f.label :Nom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :Prénom %><br />
+    <%= f.text_field :nom %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :Adresse %><br />
+    <%= f.text_area :Adresse %>
+  </div>
+  </fieldset>
+  <fieldset>
+    <legend>Questionnaire</legend>
+       <h4>Votre expérience avec le code</h4>
+       <div>
+         <%= f.label :"Javascript" %>
+         <%= f.check_box :javascript %>
+         <%= f.label :"Ruby" %>
+         <%= f.check_box :ruby %>
+         <%= f.label :"Python" %>
+         <%= f.check_box :python %>
+         <%= f.label :"html" %>
+         <%= f.check_box :html %>
+         <%= f.label :"Autre" %>
+         <%= f.check_box :autre %>
+         <%= f.text_area :Autre %>
+       </div>
+            </fieldset>
+  <div class="actions">
+    <%= f.submit "Candidatez" %>
+  </div>
 <% end %>
