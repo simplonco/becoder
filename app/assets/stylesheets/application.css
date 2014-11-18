@@ -3,10 +3,18 @@
  *= require_self
  */
 
-body{
-  padding-top: 10px;
-  font-family: 'Open Sans', sans-serif;
-  background: rgb(255,255,255);
+body {
+	padding-top: 10px;
+    font-family: "futura-pt";
+    font-size: 12px;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: 0px;
+    text-align: left;
+    font-weight: 400;
+    font-style: normal;
+    color: #666;
+    background-color: #FFFFFF;
 }
 
 h1 {
@@ -22,5 +30,16 @@ h2 {
 div {
     text-align: center;
     color: black;
+}
+
+.formulaire {
+	background-color: #131313;
+
+}
+
+.header {
+	font-family: "futura-pt";
+	font-size: 11px;
+	font-color: #131313;
 }
 

@@ -1,8 +1,11 @@
+<div id="formulaire">
+
 <h1>Proposez votre candidature</h1>
 
 
 <%= form_for Application.new do |f| %>
   <fieldset>
+  
     <legend>Questionnaire</legend>
        <h4>Votre expérience avec le code</h4>
        <div>
@@ -16,3 +19,5 @@
     <%= f.submit "Candidatez" %>
   </div>
 <% end %>
+
+</div>
