@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
   
   def create
-    @user = User.new(params[user_params])
+    @user = User.new(user_params)
     @user.save
     redirect_to @user
   end
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
 
   def index
-    @user = User.all
+    @users = User.all
   end
  
 private
