@@ -11,7 +11,37 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= image_tag("logo_simplon.png", alt: "Logo de Simplon.co", :width => 430, :height => 350) %>
+
+<div id="cadre">
+
+  <div id="header">
+
+  <h1>SIMPLON.CO</h1>
+  <h2>Fabrique sociale de codeurs #frenchtech #ess #empowerment</h2>
+
+
+  <div id="logo">
+  <%= image_tag("logosimplonred.png", alt: "Logo de Simplon.co", :width => 150) %>
+  </div>
+
+
+<navbar id="navbar">
+<%= link_to "HOME", root_path %> //
+<%= link_to 'Blog', controller: 'articles' %> //
+<br>
+CANDIDATE // <%= link_to "Create your account", new_user_path %> //
+<%= link_to "Apply for Simplon", new_application_path %> // <br>
+ADMIN // <%= link_to 'Listing Applications', controller: 'applications' %> //
+<%= link_to 'Listing Users', controller: 'users' %> //
+
+<%= link_to 'New article', new_article_path %>
+</navbar>
+</div>
+
+
   <%= yield %>
+
+<div>
+
 </body>
 </html>

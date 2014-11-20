@@ -1,18 +1,22 @@
-<h1>Proposez votre candidature</h1>
+<div class="formulaire">
+
+<h1>Apply for 2015 SIMPLON</h1>
 
 
-<%= form_for Application.new do |f| %>
-  <fieldset>
-    <legend>Questionnaire</legend>
-       <h4>Votre expérience avec le code</h4>
-       <div>
-         <%= f.label :why_us, "Votre expérience avec le code" %>
-         <%= f.text_area :why_us %>
-         <%= f.label :computer_experiences, "Votre expérience avec l'informatique" %>
-         <%= f.text_area :computer_experiences %>
-       </div>
-            </fieldset>
-  <div class="actions">
+
+<%= form_for :application , url: applications_path do |f| %>
+  <p>
+    <%= f.label :why_us %><br>
+    <%= f.text_field :why_us %>
+  </p>
+ 
+  <p>
+    <%= f.label :computer_experiences %><br>
+    <%= f.text_area :computer_experiences %>
+  </p>
+ 
+  <p>
     <%= f.submit "Candidatez" %>
-  </div>
+  </p>
 <% end %>
+</div>
