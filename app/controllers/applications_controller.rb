@@ -11,8 +11,12 @@ class ApplicationsController < ApplicationController
  
   def create
     @application = Application.new(application_params)#the P%µ££%% d'erreur était là !!!
-    @application.save
-    redirect_to @application
+    if @application.save
+      redirect_to @application
+    else
+      render "new"
+    end
+
   end
  
 

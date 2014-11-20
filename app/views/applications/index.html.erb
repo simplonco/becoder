@@ -1,15 +1,21 @@
 <h1>Listing applications for Simplon 2015</h1>
  
-<table>
+<table border="1">
   <tr>
+    <th>Application id</th>
+    <th>Application date </th>
     <th>Why have you choose us ?</th>
     <th>Tell us more about your experience with computer science </th>
   </tr>
  
   <% @applications.each do |application| %>
     <tr>
-      <td><%= application.why_us %></td>
-      <td><%= application.computer_experiences %></td>
+    <td><%= application.id %></td>
+    <td><%= application.created_at  %></td>
+    <td><%= application.why_us %></td>
+    <td><%= application.computer_experiences %></td>
+
+      
     </tr>
   <% end %>
 </table>
