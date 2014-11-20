@@ -2,36 +2,8 @@
 
 <h1>Apply for 2015 SIMPLON</h1>
 
+<%= render 'form' %> 
 
-
-<%= form_for :application , url: applications_path do |f| %>
-
-  <% if @application.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@application.errors.count, "error") %> prohibited
-      this article from being saved:</h2>
-    <ul>
-    <% @application.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-  <% end %>
-
-  <p>
-    <%=  f.label :why_us, "Why do you want to apply to Simplon an not another school ?" %><br>
-    <%= f.text_field :why_us %>
-  </p>
- 
-  <p>
-    <%= f.label :computer_experiences, "Tell us more about your experience in computer science" %><br>
-    <%= f.text_area :computer_experiences %>
-  </p>
- 
-  <p>
-    <%= f.submit "Candidatez" %>
-  </p>
-<% end %>
 </div>
 
 <%= link_to 'Back', applications_path %>
