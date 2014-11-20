@@ -16,6 +16,8 @@
     <td><%= application.computer_experiences %></td>
     <td><%= link_to 'Show', application_path(application) %></td>
     <td><%= link_to 'Edit', edit_application_path(application) %></td>
+    <td><%= link_to 'Destroy', application_path(application),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
       
     </tr>
