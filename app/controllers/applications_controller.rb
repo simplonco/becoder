@@ -21,7 +21,7 @@ end
   
  
   def create
-    @application = Application.new(application_params)#the P%µ££%% d'erreur était là !!!
+    @application = Application.new(application_params)
     if @application.save
       redirect_to @application
     else
@@ -48,7 +48,7 @@ end
 
 private
   def application_params
-    params.require(:application).permit(:why_us, :computer_experiences)
+    params.require(:application).permit(:name,:why_us, :computer_experiences, :email)
   end
 
   

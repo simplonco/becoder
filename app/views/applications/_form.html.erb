@@ -13,6 +13,11 @@
   <% end %>
 
   <p>
+    <%= f.label :name, "What is your name ?" %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
     <%=  f.label :why_us, "Why do you want to apply to Simplon an not another school ?" %><br>
     <%= f.text_field :why_us %>
   </p>
@@ -20,6 +25,11 @@
   <p>
     <%= f.label :computer_experiences, "Tell us more about your experience in computer science" %><br>
     <%= f.text_area :computer_experiences %>
+  </p>
+ 
+  <p>
+    <%= f.label :email, "what is your email address ?" %><br>
+    <%= f.text_field :email %>
   </p>
  
   <p>
