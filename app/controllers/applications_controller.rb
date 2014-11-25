@@ -22,7 +22,11 @@ end
  
   def create
     @application = Application.new(application_params)
+    
     if @application.save
+      puts '//BEGIN\\' * 100
+      ApplicantMailer.confirmation_email(@application).deliver
+      puts '//STOP\\' * 100
       redirect_to @application
     else
       render "new"
