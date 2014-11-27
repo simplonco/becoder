@@ -13,20 +13,16 @@ class ApplicationsController < ApplicationController
   end
 
   def destroy
-  @application = Application.find(params[:id])
-  @application.destroy
- 
-  redirect_to applications_path
-end
-  
+    @application = Application.find(params[:id])
+    @application.destroy 
+    redirect_to applications_path
+  end
  
   def create
     @application = Application.new(application_params)
     
     if @application.save
-      puts '//BEGIN\\' * 100
       ApplicantMailer.confirmation_email(@application).deliver
-      puts '//STOP\\' * 100
       redirect_to @application
     else
       render "new"
@@ -43,17 +39,14 @@ end
     end
   end
  
-
   def show
     @application = Application.find(params[:id])
   end
 
-
-
-private
+  private
+  
   def application_params
     params.require(:application).permit(:name,:why_us, :computer_experiences, :email)
   end
-
   
 end
